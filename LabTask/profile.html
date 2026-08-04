@@ -3,17 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Profile</title>
-        <h1>Shaheen Hussain Al-Amri</h1>
-        <h2>Software Engineer</h2>
+        <title>Profile</title>       
     </head>
 
 
     <body>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#registration">Registration</a>
+        <header>
+            <h1 id="name">Shaheen Hussain Al-Amri</h1>
+            <h2>Software Engineer</h2>
+        </header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#registration">Registration</a>
+        </nav>
 
 
         <!--About Section-->
@@ -67,8 +71,96 @@
 
         <!--Registration Section-->
         <h3 id="registration">Registration</h3>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>FullName:
+                <input type="text" id="fullName" name="fullName" required
+                minlength="3" maxlength="100">
+            </label>
 
+            <br>
+            <br>
 
+            <label>Email:
+                <input type="email" id="email" name="email" required>
+            </label>
+
+            <br>
+            <br>
+
+            <label> Age:
+                <input type="number" id="age" name="age" min="0" max="65">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employment Details</legend>
+            <label>Hire Date:
+                <input type="date" id="hireDate" name="hireDate">
+            </label>
+
+            <br>
+            <br>
+
+            <label>Employee Code: 
+                <input type="text" id="employeeCode" name="employeeCode" pattern="[A-Z]{3}-[0-9]{4}">
+            </label>
+
+            <br>
+            <br>
+
+            <label for="dept">Department:</label>
+            <select id="dept" name="department">
+            <option value="">-- Select --</option>
+            <option value="eng">Engineering</option>
+            <option value="hr">Human Resources</option>
+            <option value="web">Web Development</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label>Employment Type:
+            <input type="radio" id="fullTime" name="employmentType" value="full-time" checked>
+            <label for="fullTime">Full-time</label>
+            <input type="radio" id="partTime" name="employmentType" value="part-time">
+            <label for="partTime">Part-time</label>
+            </label>
+
+            <br>
+            <br>
+
+            <label>Benefits:</label>
+            <input type="checkbox" id="healthInsurance" name="benefits" value="health-insurance">
+            <label for="healthInsurance">Health Insurance</label>
+            <input type="checkbox" id="retirementPlan" name="benefits" value="retirement-plan">
+            <label for="retirementPlan">Retirement Plan</label>
+
+            <br>
+            <br>
+
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+
+            <br>
+            <br>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+            <br>
+            <br>
+
+            <label>Employee ID:
+                <input type="text" name="employeeId" value="EMP-2044" readonly>
+            </label>
+
+            <br>
+            <br>
+            
+            <label>Legacy Field:</label>
+            <input type="text" name="legacyField" disabled>
+        </fieldset>
 
 
     </body>     
