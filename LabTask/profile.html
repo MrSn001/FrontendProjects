@@ -1,181 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Profile</title>       
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/LabTask/Style/Style.css">
+</head>
 
 
-    <body>
-        <header>
-            <h1 id="name">Shaheen Hussain Al-Amri</h1>
-            <h2>Software Engineer</h2>
-        </header>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#registration">Registration</a>
-            <a href="/LabTask/company.html">Company</a>
-        </nav>
+<body>
+    <header>
+        <h1 id="name">Shaheen Hussain Al-Amri</h1>
+        <h2>Software Engineer</h2>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#registration">Registration</a>
+        <a href="/LabTask/company.html">Company</a>
+    </nav>
 
 
-        <!--About Section-->
-        <h3 id="about">About</h3>
-        <img src="/LabTask/img/ProfilePicture.jpg" alt="Profile Picture" width="100" height="100">
-        <p>Shaheen Hussain Al-Amri is a <strong>software engineer</strong> with experience in <em>web development</em> and programming.</p>
-        <audio controls>
-            <source src="/LabTask/Audio/ProfileAudio.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
-
-        <!--Skills Section-->
-        <h3 id="skills">Skills</h3>
-        <ul>
-            <li>Fast Learner</li>
-            <li>C#</li>
-        </ul>
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-        </ol>
+    <!--About Section-->
+    <section id="about">
+        <article>
+            <h3>About</h3>
+            <img src="/LabTask/img/ProfilePicture.jpg" alt="Profile Picture" width="100" height="100">
+            <p>Shaheen Hussain Al-Amri is a <strong>software engineer</strong> with experience in <em>web
+                    development</em> and programming.</p>
+            <audio controls>
+                <source src="/LabTask/Audio/ProfileAudio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </article>
+    </section>
 
 
-
-        <!--Experience Section-->
-        <h3 id="experience">Experience</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Role</th>
-                    <th scope="col">Company</th>
-                    <th scope="col">Years</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Software Engineer</td>
-                    <td>ITECH</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Web Developer</td>
-                    <td>Rihal</td>
-                    <td>2</td>
-                </tr>
-            </tbody>
-        </table>
+    <!--Skills Section-->
+    <section id="skills">
+        <article>
+            <h3>Skills</h3>
+            <ul>
+                <li>Fast Learner</li>
+                <li>C#</li>
+            </ul>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+        </article>
+    </section>
 
 
 
-        <!--Registration Section-->
-        <form>
 
-        
-        <h3 id="registration">Registration</h3>
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label>FullName:
-                <input type="text" id="fullName" name="fullName" required
-                minlength="3" maxlength="100">
-            </label>
-
-            <br>
-            <br>
-
-            <label>Email:
-                <input type="email" id="email" name="email" required>
-            </label>
-
-            <br>
-            <br>
-
-            <label> Age:
-                <input type="number" id="age" name="age" min="0" max="65">
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Employment Details</legend>
-            <label>Hire Date:
-                <input type="date" id="hireDate" name="hireDate">
-            </label>
-
-            <br>
-            <br>
-
-            <label>Employee Code: 
-                <input type="text" id="employeeCode" name="employeeCode" pattern="[A-Z]{3}-[0-9]{4}">
-            </label>
-
-            <br>
-            <br>
-
-            <label for="dept">Department:</label>
-            <select id="dept" name="department">
-            <option value="">-- Select --</option>
-            <option value="eng">Engineering</option>
-            <option value="hr">Human Resources</option>
-            <option value="web">Web Development</option>
-            </select>
-
-            <br>
-            <br>
-
-            <label>Employment Type:
-            <input type="radio" id="fullTime" name="employmentType" value="full-time" checked>
-            <label for="fullTime">Full-time</label>
-            <input type="radio" id="partTime" name="employmentType" value="part-time">
-            <label for="partTime">Part-time</label>
-            </label>
-
-            <br>
-            <br>
-
-            <label>Benefits:</label>
-            <input type="checkbox" id="healthInsurance" name="benefits" value="health-insurance">
-            <label for="healthInsurance">Health Insurance</label>
-            <input type="checkbox" id="retirementPlan" name="benefits" value="retirement-plan">
-            <label for="retirementPlan">Retirement Plan</label>
-
-            <br>
-            <br>
-
-            <label for="bio">Bio:</label>
-            <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
-
-            <br>
-            <br>
-
-            <label for="resume">Upload Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-
-            <br>
-            <br>
-
-            <label>Employee ID:
-                <input type="text" name="employeeId" value="EMP-2044" readonly>
-            </label>
-
-            <br>
-            <br>
-
-            <label>Legacy Field:</label>
-            <input type="text" name="legacyField" disabled>
-        </fieldset>
-
-        <br>
+    <!--Experience Section-->
+    <section id="experience">
+        <article>
+            <h3>Experience</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Role</th>
+                        <th scope="col">Company</th>
+                        <th scope="col">Years</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Software Engineer</td>
+                        <td>ITECH</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Web Developer</td>
+                        <td>Rihal</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section>
 
 
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-        </form>
-    </body>     
 
-    <footer>
-        <p>&copy; 2024 Shaheen Hussain Al-Amri. All rights reserved.</p>
-        <a href="#name">Back to Top</a>
-    </footer>
+
+    <!--Registration Section-->
+    <section id="registration">
+        <article>
+            <form>
+
+
+                <h3>Registration</h3>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label>FullName:
+                        <input type="text" id="fullName" name="fullName" required minlength="3" maxlength="100">
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <label>Email:
+                        <input type="email" id="email" name="email" required>
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <label> Age:
+                        <input type="number" id="age" name="age" min="0" max="65">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Employment Details</legend>
+                    <label>Hire Date:
+                        <input type="date" id="hireDate" name="hireDate">
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <label>Employee Code:
+                        <input type="text" id="employeeCode" name="employeeCode" pattern="[A-Z]{3}-[0-9]{4}">
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <label for="dept">Department:</label>
+                    <select id="dept" name="department">
+                        <option value="">-- Select --</option>
+                        <option value="eng">Engineering</option>
+                        <option value="hr">Human Resources</option>
+                        <option value="web">Web Development</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+                    <label>Employment Type:
+                        <input type="radio" id="fullTime" name="employmentType" value="full-time" checked>
+                        <label for="fullTime">Full-time</label>
+                        <input type="radio" id="partTime" name="employmentType" value="part-time">
+                        <label for="partTime">Part-time</label>
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <label>Benefits:</label>
+                    <input type="checkbox" id="healthInsurance" name="benefits" value="health-insurance">
+                    <label for="healthInsurance">Health Insurance</label>
+                    <input type="checkbox" id="retirementPlan" name="benefits" value="retirement-plan">
+                    <label for="retirementPlan">Retirement Plan</label>
+
+                    <br>
+                    <br>
+
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" rows="4" cols="50"></textarea>
+
+                    <br>
+                    <br>
+
+                    <label for="resume">Upload Resume:</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+
+                    <br>
+                    <br>
+
+                    <label>Employee ID:
+                        <input type="text" name="employeeId" value="EMP-2044" readonly>
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <label>Legacy Field:</label>
+                    <input type="text" name="legacyField" disabled>
+                </fieldset>
+
+                <br>
+
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+    </section>
+
+</body>
+
+<footer>
+    <p>&copy; 2024 Shaheen Hussain Al-Amri. All rights reserved.</p>
+    <a href="#name">Back to Top</a>
+</footer>
+
 </html>
